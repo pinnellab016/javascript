@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    
+    <title>Contatore click</title>
+  </head>
+  <body>
+  
+  <div class="container">
+    <h1>Conta click</h1>
+    <h3>Istruzioni</h3>
+    <p>Disegnare un quadrato verde al centro del foglio. L'area è cliccabile. Ogni click viene registrato.<br>
+      Al decimo click l'area cambia colore e diventa rossa.
+    </p>
+    <p>Il bottone resetta il contatore e il quadrato torna di colore verde.</p>
+    <div class="row">
+      <div class="col-sm-1">
+        <div id="quadrato" onclick="conta()"></div>
+      </div>
+      <div class="col-sm-11">
+        <div id="contatore">Contatore: 0</div>
+        <button type="button" class="btn btn-primary" onclick="reset()">Reset contatore</button>
+      </div>
+    </div>  
+
+     
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

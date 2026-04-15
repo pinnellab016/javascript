@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Previsioni Meteo</title>	
+</head>
+<body>
+  <h1>Meteo di Oggi</h1>
+  <div id="box-meteo">
+        Recupero dati in corso...
+  </div>
+  <script>
+	  const contenitore1 = document.getElementById('box-meteo');
+    // 1. Definiamo l'URL dell'API meteo
+    let requestURL = 'https://api.tutiempo.net/json/?lan=it&apid=zxGaXazaXaz8cMe&lid=97021';
+
+    // 2. Creiamo l'oggetto per la richiesta (il metodo del libro!)
+    let request = new XMLHttpRequest();
+    
+    // 3. Prepariamo la chiamata in modalità GET e asincrona (true)
+    request.open('GET', requestURL, true);
+    
+    // 4. Avvisiamo il browser di convertire in automatico il testo in un oggetto JS
+    request.responseType = 'json';
+    
+    // 5. Inviamo fisicamente la richiesta su internet
+    request.send();
+
+    // 6. Definiamo cosa fare QUANDO i dati sono arrivati con successo
+    request.onload = function() {
+      // request.response contiene tutto il JSON già trasformato in oggetto
+      const datiMeteo = request.response;
+      
+      // Navighiamo dentro l'oggetto per "pescare" solo quello che ci serve!
+      // Estraggo il nome della città per fare un bel messaggio
+      const citta = datiMeteo.locality.name; 
+      
+      // Estraggo le temperature di "day1"
+      const tempMin = datiMeteo.day1.temperature_min;
+      const tempMax = datiMeteo.day1.temperature_max;
+      const icon = datiMeteo.day1.icon;
+      
+  	  // Crea un elemento <p> paragrafo nel DOM
+      const tmin = document.createElement('p');
+  	  // Inseriamo all'interno dell'elemento una stringa con tag HTML
+      tmin.innerHTML = '<strong>Temperatura minima: </strong>'+tempMin;
+  	  // Aggancio un figlio: l'elemento tmin viene agganciamo all'interno del "genitore" contenitore1 (che è il div box-meteo)
+  	  // SOLO ORA IL RISULTATO VIENE VISUALIZZATO DAL BROWSER
+      contenitore1.appendChild(tmin);
+  
+      const tmax = document.createElement('p');
+      //Metodo alternativo per utilizzare le variabili all'interno di stringhe
+      //NB: l'apostrofo utilizzato è il backtick
+      tmax.innerHTML = `<strong>Temperatura minima: </strong>${tempMax}`;
+      contenitore1.appendChild(tmax);
+  
+      const img = document.createElement('img');
+  	  //Modifichiamo l'attributo src dell'elemento creato
+      img.src = 'https://v5i.tutiempo.net/wi/01/40/'+icon+'.png';
+  	  //Modifichiamo l'attributo alt dell'elemento creato
+      img.alt = 'Descrizione alternativa';
+      contenitore1.appendChild(img);
+    }
+
+  </script>
+</body>
+</html>

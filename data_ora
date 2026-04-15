@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+  <title>Il mio HTML 5</title>
+  <style>  
+    h2{
+      //font-style: italic;
+    }    
+    .corsivo{
+      font-style: italic;
+    } 
+    .rosso{
+      color: #FF0000;
+      //color: red;
+    }   
+  </style>
+
+</head>
+<body>
+
+  <h1><em>Intestazione della pagina HTML 5</em></h1>
+  <h2 class="corsivo rosso">Primo esempio di HTML 5 con JavaScript</h2>
+  <h3>Ultimo accesso:</h3>
+  <button type="button">Visualizza data e ora</button>
+  <p id="dataora"></p>  
+  <p><b>Lorem ipsum </b>dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui</p> 
+  <script>
+	  document.getElementById("dataora").innerHTML = Date();
+	</script>
+   
+</body>
+</html>

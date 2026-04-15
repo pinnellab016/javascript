@@ -1,0 +1,13 @@
+#quadrato
+{
+    width: 5em;
+    height: 5em;
+    background-color: greenyellow;
+    margin-top: 20px;
+    border: 1px dashed black;
+}
+
+#contatore
+{
+    margin-top: 22px;
+}
