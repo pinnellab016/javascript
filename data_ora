@@ -20,7 +20,7 @@
 </head>
 <body>
 
-  <h1><em>Intestazione della pagina HTML 5</em></h1>
+  <h1><em>Intestazione H1 della pagina HTML 5</em></h1>
   <h2 class="corsivo rosso">Primo esempio di HTML 5 con JavaScript</h2>
   <h3>Ultimo accesso:</h3>
   <button type="button">Visualizza data e ora</button>
