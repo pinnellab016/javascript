@@ -7,7 +7,7 @@ from datetime import datetime, timezone, timedelta
 
 def get_file_info(filepath):
     result = subprocess.run(
-        ["git", "log", "-1", "--pretty=format:%s|%ad", "--date=short", "--", filepath],
+        ["git", "log", "-1", "--pretty=format:%s|%ad", "--date=format:%d-%m-%Y", "--", filepath],
         capture_output=True, text=True
     )
     if result.stdout:
