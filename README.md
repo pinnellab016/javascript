@@ -23,9 +23,8 @@
 │   └── 📄 style.css: "Init" (last update: 2026-04-15)
 ├── 📄 3bottoni.html: "Utilizzo della proprietà innerHTML e del metodo addEventListener" (last update: 2026-05-04)
 ├── 📄 README.md: "chore: aggiorna struttura README" (last update: 2026-05-04)
-├── 📄 cambiaStile: "Init" (last update: 2026-04-15)
-├── 📄 data_ora: "Visualizza data e ora" (last update: 2026-05-04)
-└── 📄 test-debug.py: "script" (last update: 2026-05-04)
+├── 📄 cambiaStile: "Cambia stile css di un div" (last update: 2026-05-04)
+└── 📄 data_ora: "Visualizza data e ora" (last update: 2026-05-04)
 ```
 
 *Aggiornato il: 04-05-2026*
