@@ -18,13 +18,13 @@
 <!-- FILE_TREE_START -->
 ```
 ├── 📁 contatore_click/
-│   ├── 📄 index.html: "Init" (last update: 2026-04-15)
-│   ├── 📄 script.js: "Init" (last update: 2026-04-15)
-│   └── 📄 style.css: "Init" (last update: 2026-04-15)
-├── 📄 3bottoni.html: "Utilizzo della proprietà innerHTML e del metodo addEventListener" (last update: 2026-05-04)
-├── 📄 README.md: "chore: aggiorna struttura README" (last update: 2026-05-04)
-├── 📄 cambiaStile: "Cambia stile css di un div" (last update: 2026-05-04)
-└── 📄 data_ora: "Visualizza data e ora" (last update: 2026-05-04)
+│   ├── 📄 index.html: "Init" (last update: 15-04-2026)
+│   ├── 📄 script.js: "Init" (last update: 15-04-2026)
+│   └── 📄 style.css: "Init" (last update: 15-04-2026)
+├── 📄 3bottoni.html: "Utilizzo della proprietà innerHTML e del metodo addEventListener" (last update: 04-05-2026)
+├── 📄 README.md: "chore: aggiorna struttura README" (last update: 04-05-2026)
+├── 📄 cambiaStile: "Cambia stile css di un div" (last update: 04-05-2026)
+└── 📄 data_ora: "Visualizza data e ora" (last update: 04-05-2026)
 ```
 
 *Aggiornato il: 04-05-2026*
