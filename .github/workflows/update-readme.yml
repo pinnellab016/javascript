@@ -23,7 +23,7 @@ jobs:
           python-version: '3.11'
 
       - name: Run script
-        run: python scripts/update_readme.py
+        run: python .scripts/update_readme.py
 
       - name: Commit e push README
         run: |
