@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Javascript :: innerHTML e addEventListener</title>
+    </head>
+    <body>
+        <h1>Clicca su un bottone e comparirà il suo testo nella pagina</h1>
+        <button id="bottone1">Testo bottone 1</button>
+        <button id="bottone2">Testo bottone 2</button>
+        <button id="bottone3">Testo bottone 3</button>
+        
+        <p id="testo">Qui comparirà il nuovo testo</p>
+
+    </body>
+
+    <script>
+        const bottone1 = document.getElementById("bottone1");
+        const bottone2 = document.getElementById("bottone2");
+        const bottone3 = document.getElementById("bottone3");
+        const testo = document.getElementById("testo");
+
+        let txtBtn1 = bottone1.innerHTML;
+        let txtBtn2 = bottone2.innerHTML;
+        let txtBtn3 = bottone3.innerHTML;
+
+
+        bottone1.addEventListener("click", function() {
+            //testo.innerHTML = "Ferretti dorme";
+            testo.innerHTML = txtBtn1;
+        });
+
+        bottone2.addEventListener("click", function() {
+            //testo.innerHTML = "Prince sogna";
+            testo.innerHTML = txtBtn2;
+        });
+
+        bottone3.addEventListener("click", function() {
+            //testo.innerHTML = "Daniele parla";
+            testo.innerHTML = txtBtn3;
+        });
+    </script>
+</html>
