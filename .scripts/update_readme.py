@@ -3,6 +3,7 @@ import os
 from datetime import datetime
 import sys
 sys.stdout.reconfigure(encoding='utf-8')
+from datetime import datetime, timezone, timedelta
 
 def get_file_info(filepath):
     result = subprocess.run(
@@ -63,7 +64,7 @@ def update_readme():
     else:
         content = "# Repository\n\n"
     
-    new_section = f"{marker_start}\n```\n{tree_content}\n```\n\n*Aggiornato il: {datetime.now().strftime('%Y-%m-%d %H:%M')}*\n{marker_end}"    
+    new_section = f"{marker_start}\n```\n{tree_content}\n```\n\n*Aggiornato il: {datetime.now().strftime('%d-%m-%Y')}*\n{marker_end}"
     # Sostituisce la sezione se esiste, altrimenti la appende
     if marker_start in content:
         import re
